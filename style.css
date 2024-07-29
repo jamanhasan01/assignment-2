@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Inter", sans-serif;
+    font-weight:400;
+    font-style: normal;
+    background-color: black;
+    max-width: 1440px;
+}
+/* global css start --------------------------------------------------------*/
+:root{
+    --text1:#FFFFFF;
+    --text2:rgba(239, 237, 232, 0.65);
+    --mainClr:#E6533C;
+}
+
+.content{
+    width: 90%;
+    margin:0 auto;
+}
+
+.h1{
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    line-height: 75px;
+}
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+.p1{
+    color: var(--text2);
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+}
+.p2{
+    color: var(--text2);
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+}
+.active{
+    background-color: #E6533C;
+    color: white;
+}
+button:hover{cursor: pointer;}
+.btn{
+    background-color: #E6533C;
+    color: white;
+    border: 1px solid #E6533C;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 42px;
+}
+.btnTrans{
+    background-color: transparent;
+    color: white;
+    border: 1px solid  white;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 42px;
+}
+.title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.py{
+    padding:80px 0px;
+}
+.mt{
+    margin-top:80px;
+}
+/* header style start -----------------------------------------------------*/
+header#header {
+    width: 100%;
+    /* height: 100vh; */
+    background: linear-gradient(to top, #111111, #77777740);
+}
+.logo{
+    color:var(--mainClr);
+    font-size: 35px;
+    font-weight: bolder;
+    font-style: italic;
+}
+.headerWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    align-items: center;
+}
+.navItem {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #ffffff47;
+    padding: 13px 5px;
+    border-radius: 40px;
+}
+.navItem li {
+    list-style: none;
+}
+
+.navItem li a {text-decoration: none;color: white;font-size: 18px;padding: 9px 13px;border-radius: 19px;color: white;}
+.navItem li a:hover{
+    background: #E6533C;
+    color: white;
+}
+.navIcon{
+    color: white;
+    display: none;
+}
+/* ..........----------------------------------- */
+
+
+.heroWrap {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.heroCont {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.heroCont span {
+    font-style: italic;
+    font-weight: 100;
+    font-family: cursive;
+}
+.heroBtn {
+    display: flex;
+    gap: 18px;
+}
+
+.heroImage {
+    flex: 1;
+    display: flex;
+    justify-content:end;
+    height: 100%;
+    position: relative;
+}
+
+.heroImage img {
+    height: 100%;
+    position: relative;
+}
+.haroImgCard1 {
+    position: absolute;
+}
+
+.haroImgCard1 {
+    position: absolute;
+    left: 171px;
+    bottom: 92px;
+    background: rgba(48, 48, 48, 0.54);
+    text-align: center;
+    padding: 9px 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.heroCardInfo h6 {
+    font-size: 27px;
+    color: white;
+    text-align: center;
+}
+
+.cercyl {
+    background: #e6533c;
+    padding: 17px;
+    border-radius: 50%;
+}
+
+.haroImgCard2 {
+    position: absolute;
+    right: 2px;
+    top: 119px;
+    background: rgba(48, 48, 48, 0.54);
+    text-align: center;
+    padding: 9px 12px;
+    border-radius: 12px;
+}
+
+.haroImgCard2 h5{
+    font-size: 35px;
+    color: white;
+}
+
+/* habit section start  */
+.habitWrap {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    gap: 50px;
+}
+.singleHabitBox {
+}
+
+.singleHabitBox {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.singleHabitBox img {
+    border-radius: 50%;
+}
+
+.singleHabitBox h6 {
+    font-size: 17px;
+    color: white;
+}
+
+.singleHabitBox {}
+/* responsive media section ----------------------------------*/
+
+/* mobile version start */
+
+@media only screen and (max-width:577px) {
+    .content{
+        width:90%;
+    }
+    .logo {
+        font-size: 26px;
+    }
+
+    .h1 {
+        font-size: 48px;
+        line-height: 54px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .p1 {
+        font-size: 13px;
+    }
+    .btn {
+        font-size: 13px;
+
+    }
+
+    /* glopal css end ------------*/
+
+    /* header style start --------------------*/
+    .navItem{
+        display:none;
+        
+    }
+    .navIcon{
+        display: block;
+        cursor: pointer;
+    }
+    .heroWrap {
+
+        flex-direction: column;
+    }
+    .btnTrans{
+        font-size: 13px;
+    }
+    .haroImgCard1 {
+        left: 0px;
+    }
+    .heroImage {
+        margin-top: 20px;
+    }
+
+    /* habit section start */
+    .habitWrap {
+        grid-template-columns: repeat(1,1fr);
+     
+    }
+
+}
