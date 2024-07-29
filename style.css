@@ -37,7 +37,7 @@ h2{
     color: var(--text2);
     font-size: 16px;
     font-weight: 200;
-    line-height: 20px;
+    line-height: 25px;
 }
 .p2{
     color: var(--text2);
@@ -178,7 +178,7 @@ header#header {
 }
 
 .heroCardInfo h6 {
-    font-size: 27px;
+    font-size: 20px;
     color: white;
     text-align: center;
 }
@@ -191,8 +191,8 @@ header#header {
 
 .haroImgCard2 {
     position: absolute;
-    right: 2px;
-    top: 119px;
+    right: 0px;
+    top: 160px;
     background: rgba(48, 48, 48, 0.54);
     text-align: center;
     padding: 9px 12px;
@@ -200,7 +200,7 @@ header#header {
 }
 
 .haroImgCard2 h5{
-    font-size: 35px;
+    font-size: 25px;
     color: white;
 }
 
@@ -233,7 +233,33 @@ header#header {
     color: white;
 }
 
-.singleHabitBox {}
+
+/* run section start */
+.runWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222222;
+    padding: 60px 60px;
+    border-radius: 30px;
+}
+
+.runCont {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 21px;
+}
+
+.runImg {
+    width: 35%;
+}
+
+.runImg img {
+    width: 100%;
+    border-radius: 30px;
+}
 /* responsive media section ----------------------------------*/
 
 /* mobile version start */
