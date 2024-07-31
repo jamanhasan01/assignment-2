@@ -441,6 +441,10 @@ form.calcForm {
 }
 
 
+form.calcForm >div select option {
+    background: #3d3d3d;
+    color: #637575;
+}
 form.calcForm >div input {
     padding-right: none;
     width: 50%;
@@ -670,13 +674,16 @@ footer > p {
         justify-items:flex-start
     }
     /* footer */
+    .fLogo {
+        font-size: 48px;
+    }
     .footerWtrap {
         
 grid-template-columns: repeat(1,1fr);
         
 justify-items: flex-start;
         
-gap: 25px;
+gap: 40px;
     }
     .footerDesc {
         grid-column: span 1;
