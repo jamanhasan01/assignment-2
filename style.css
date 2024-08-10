@@ -20,6 +20,9 @@ body{
 .twhite{
     color: white;
 }
+.t-center{
+    text-align: center;
+}
 
 .content{
     width: 90%;
@@ -89,6 +92,71 @@ button:hover{cursor: pointer;}
 }
 .mt{
     margin-top:80px;
+}
+
+/* price------------------------------------ */
+.priceTitle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.priceTitle p {
+    width: 50%;
+    margin: 0 auto;
+}
+.priceIcon i {
+    font-size: 40px;
+    color: #e6533c;
+}
+
+.priceInfo h5 {
+    font-size: 18px;
+    color: white;
+}
+
+.priceInfo h6 {
+    color: #e6533c;
+    font-size: 34px;
+}
+
+ul.priceList {
+    display: flex;
+    flex-direction: column;
+}
+ul.priceList li {
+    list-style: none;
+    line-height: 40px;
+}
+
+ul.priceList i {
+    color: #e6533c;
+    /* margin-right: 27px; */
+    font-size: 18px;
+}
+
+ul.priceList a {
+    text-decoration: none;
+    color: white;
+    margin-left: 14px;
+    font-size: 16px;
+}
+
+.priceWrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.singlePrice {
+    /* padding: 30px; */
+    background: #222222;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
 }
 /* header style start -----------------------------------------------------*/
 header#header {
@@ -606,6 +674,22 @@ footer > p {
     .heroImage {
         margin-top: 20px;
     }
+    /* price section start */
+    .priceTitle p{
+        width: 100%;
+    }
+    .priceWrap{
+        flex-direction: column;
+    } 
+    .singlePrice{
+        width: 100%;
+    }
+    .singlePrice > div {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
     /* habit section start */
     .habitWrap {
@@ -616,6 +700,7 @@ footer > p {
     .runWrap {
         flex-direction: column;
         gap: 48px;
+        padding: 30px;
     }
     .runCont {
         width: 100%;}
