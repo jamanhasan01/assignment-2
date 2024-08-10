@@ -101,7 +101,12 @@ button:hover{cursor: pointer;}
     flex-direction: column;
     gap: 10px;
 }
-
+.singlePrice > div {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .priceTitle p {
     width: 50%;
     margin: 0 auto;
